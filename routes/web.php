@@ -20,3 +20,10 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/testmiddleware', 'HomeController@testmiddleware');
+
+// Route::get('/my_roles', 'ExamplesController@show_my_roles')->middleware('auth');
+
+
+// Route::resource('/post', 'PostsController');

@@ -81,7 +81,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                    @include('permissions-demo')
                 </div>
 
                 <div class="links">
