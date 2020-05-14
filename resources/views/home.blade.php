@@ -15,9 +15,6 @@
                     @endif
 
                     You are logged in!
-
-                    @include('permissions-demo')
-
                 </div>
             </div>
         </div>
