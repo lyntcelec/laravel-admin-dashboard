@@ -9,3 +9,18 @@
 @else
   <p>Sorry, you may NOT edit articles.</p>
 @endcan
+
+<div>{{ Auth::user()->name }}</div>
+<div>----------------------</div>
+<div>{{ Auth::user() }}</div>
+<div>----------------------</div>
+<div>{{ Auth::user()->getAllPermissions() }}</div>
+<div>----------------------</div>
+<div>{{ Auth::user()->getPermissionsViaRoles() }}</div>
+<div>----------------------</div>
+<div>{{ Auth::user()->hello() }}</div>
+
+
+<!-- $permissions = $user->getDirectPermissions();
+$permissions = $user->getPermissionsViaRoles();
+$permissions = $user->getAllPermissions(); -->

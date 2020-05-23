@@ -6,6 +6,7 @@ use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Spatie\Permission\Traits\HasRoles;
+use Illuminate\Support\Facades\Log;
 
 class User extends Authenticatable
 {
@@ -42,5 +43,12 @@ class User extends Authenticatable
     public function posts()
     {
         return $this->belongsToMany('posts');
+    }
+
+    public function hello()
+    {
+        $users = \DB::table('users')->get();
+        Log::info(json_encode($users, JSON_PRETTY_PRINT));
+        return "Hellllllo";
     }
 }
