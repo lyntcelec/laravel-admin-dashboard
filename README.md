@@ -1,3 +1,3 @@
 ```sh
-$ php artisan migrate:fresh --seed --seeder=UsersTableSeeder
+$ php artisan migrate:fresh --seed --seeder=PermissionsSeeder
 ```
